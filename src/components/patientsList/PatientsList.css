@@ -1,0 +1,76 @@
+.patients-list{
+    .header{
+      display: flex;
+      justify-content: space-between;
+    }
+    h2{
+      margin: 0;
+      font-size: 1.2vw;
+      text-align: center;
+    }
+    .patients-search{
+      margin-left: .5vw;
+      text-align: center;
+      vertical-align: middle;
+      position: relative;
+      width: 100%;
+    }
+    .search-container {
+      display: flex;
+      align-items: center;
+    }
+    
+    .search-container input {
+      width: 100%;
+      padding: 1vh;
+      border: 0.1vh solid #ccc;
+      border-radius: 1vh;
+    }
+    
+    .search-icon {
+      position: absolute;
+      right: 1vw;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 1vw;
+      height: 2vh;
+      pointer-events: none;
+    }
+    ul{
+      list-style: none;
+      padding: 0;
+  
+      .patient-item{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: .5vw;
+        cursor: pointer;
+  
+        &.active{
+          background-color: #e0fcfc;
+          border-radius: 1vw;
+        }
+        img{
+          height: 6vh;
+        }
+        .patient-info{
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+            margin-left: 1.5vh;
+            font-size: 1.5vh;
+            
+            span{
+                &:nth-child(1){
+                    font-weight: bold;
+                }
+                &:nth-child(2){
+                    color: #707070;
+                }
+            }
+            
+        }
+      }
+    }
+  }

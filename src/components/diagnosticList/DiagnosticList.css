@@ -1,0 +1,34 @@
+.diagnostic-list{
+    height: 24vh;
+    overflow: scroll;
+
+    h2{
+        margin: 1vh;
+        font-size: 2vh;
+    }
+    table{
+        width: 100%;
+        border-collapse: collapse;
+        
+        th{
+            padding: 1vh;
+            text-align: left;
+            border-bottom: 0.2vh solid #ddd;
+            font-size: 1.6vh;
+        }
+        td{
+            padding: 1vh;
+            text-align: left;
+            border-bottom: 0.2vh solid #ddd;
+            font-size: 1.6vh;
+
+        }
+        tr{
+            &:last-child{
+                td{
+                    border-bottom: none;
+                }
+            }
+        }
+    }
+}

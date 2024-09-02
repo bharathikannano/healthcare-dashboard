@@ -1,0 +1,30 @@
+.lab-results{
+    height: 22vh;
+    overflow: scroll;
+
+    h2{
+        margin: 1vh;
+        font-size: 2vh;
+    }
+    ul {
+        list-style: none;
+        padding: 0;
+    }
+    li{
+        display: flex;
+        justify-content: space-between;
+        padding: 1vh 0;
+        border-bottom: 0.1vh solid #ddd;
+        font-size: 1.6vh;
+
+        &:last-child{
+            border-bottom: none;
+        }
+
+        img{
+            height: 1.5vh;
+            margin-right: 1vw;
+            cursor: pointer;
+        }
+        }
+}

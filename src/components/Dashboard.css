@@ -1,0 +1,43 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f7f7f7;
+}
+
+.content {
+  display: flex;
+  gap: 1vw;
+  padding: 1vw;
+
+  .container-one{
+    width: calc(100% - 75vw);
+    height: 87vh;
+    overflow: scroll;
+  }
+  .container-two{
+    width: 50.5vw;
+    overflow: scroll;
+  }
+  .container-three{
+    width: calc(100% - 75vw);
+    overflow: scroll;
+  }
+}
+
+.patients-list, .diagnosis-history, .patient-details, .diagnostic-list, .lab-results {
+  background-color: #fff;
+  padding: 1vh;
+  border-radius: 1vw;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-top: 1vh;
+}
+
+.lab-results button {
+  background-color: #00c8c8;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
